@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    background-color: teal;
+    color: #fff;
+    padding: .33em;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*  */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form {
+    width: 50%;
+    margin: 1em auto;
+    border: 1px solid #000;
+    padding: .4em;
+}
+
+form > div {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+form > div.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+form > div.center{
+    display: flex;
+    justify-content: center;
+}
+
+form > div > input[type="radio"] + label {
+    display: inline-block;
+}
+
+/*  */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table thead {
+    background: #333;
+    color: white;
+}
+
+table thead th, table tbody td {
+    padding: .33em;
+    text-align: left;
+    border-right: 1px solid white;
+}
+
+table tbody > tr:nth-child(odd) {
+    background: rgb(234, 234, 234);
+}
+
+table tbody > tr:nth-child(even) {
+    background: rgb(192, 192, 192);
+}
+
+table tbody td {
+    font-size: .88em;
+    height: 100px;
+}
+
+table tbody td:nth-child(8n) {
+    overflow: hidden;
+    position: relative;
+    font-size: .7em;
+    padding: 0;
+}
+
+table tbody td:nth-child(10n) {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*  */
+
+td.td-photo {
+    position: relative;
+}
+
+td.td-photo > img {
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
